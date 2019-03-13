@@ -174,12 +174,12 @@ def check(planFile, num_step):
         next_phase = next_phase[0]
 
         # check phase itself
+		if next_phase == '':
+            continue
         if next_phase not in [0, 1, 2, 3, 4, 5, 6, 7, 8]:
             flag = False
             error_info = 'Phase must be in [0, 1, 2, 3, 4, 5, 6, 7, 8]!'
             break
-        if next_phase == '':
-            continue
 
         # check changing phase
         if next_phase != current_phase and next_phase != 0 and current_phase != 0:

@@ -1,5 +1,6 @@
 .idea
 _*
+*.swp
 
 # Logs
 logs
