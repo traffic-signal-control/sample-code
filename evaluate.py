@@ -44,7 +44,6 @@ def test_run(dic_sim_setting, roadnetFile, flowFile, planFile):
     plan = open(planFile, "r")
     plan.readline()
 
-    # get lanes todo--need to be changed when lane setting or intersection setting is changed
     inter_name = "intersection_1_1"
     list_all_lanes = list(eng.get_lane_vehicles().keys())
     dic_roadnet = json.load(open(roadnetFile, "r"))
@@ -106,7 +105,6 @@ def test_run(dic_sim_setting, roadnetFile, flowFile, planFile):
 
 
 def get_planed_entering(flowFile, dic_sim_setting):
-    # todo--check with huichu about how each vehicle is inserted, according to the interval. 1s error may occur.
     list_flow = json.load(open(flowFile, "r"))
     dic_traj = {}
     for flow_id, flow in enumerate(list_flow):
@@ -128,7 +126,7 @@ def cal_travel_time(df_vehicle_actual_enter_leave, df_vehicle_planed_enter, outF
     df_res = pd.concat([df_vehicle_planed_enter, df_vehicle_actual_enter_leave], axis=1, sort=False)
     assert len(df_res) == len(df_vehicle_planed_enter)
 
-    df_res["leave_time"] = df_res["leave_time"].fillna(dic_sim_setting["num_step"])
+    df_res["leave_time"].fillna(dic_sim_setting["num_step"], inplace=True)
     df_res["travel_time"] = df_res["leave_time"] - df_res["planed_enter_time"]
     travel_time = df_res["travel_time"].mean()
     with open(outFile, "w") as f:
