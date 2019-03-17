@@ -128,7 +128,7 @@ def cal_travel_time(df_vehicle_actual_enter_leave, df_vehicle_planed_enter, outF
     df_res = pd.concat([df_vehicle_planed_enter, df_vehicle_actual_enter_leave], axis=1, sort=False)
     assert len(df_res) == len(df_vehicle_planed_enter)
 
-    df_res["leave_time"].fillna(dic_sim_setting["num_step"])
+    df_res["leave_time"] = df_res["leave_time"].fillna(dic_sim_setting["num_step"])
     df_res["travel_time"] = df_res["leave_time"] - df_res["planed_enter_time"]
     travel_time = df_res["travel_time"].mean()
     with open(outFile, "w") as f:
@@ -174,7 +174,7 @@ def check(planFile, num_step):
         next_phase = next_phase[0]
 
         # check phase itself
-	if next_phase == '':
+        if next_phase == '':
             continue
         if next_phase not in [0, 1, 2, 3, 4, 5, 6, 7, 8]:
             flag = False
