@@ -174,7 +174,7 @@ def check(planFile, num_step):
         next_phase = next_phase[0]
 
         # check phase itself
-		if next_phase == '':
+	if next_phase == '':
             continue
         if next_phase not in [0, 1, 2, 3, 4, 5, 6, 7, 8]:
             flag = False
