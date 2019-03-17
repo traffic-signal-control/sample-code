@@ -1,4 +1,4 @@
-# TSCC2019
+# TSCC
 Traffic Signal Control Competition
 
 Join Competition from [here](http://www.tscc2050.com/) on PC.
