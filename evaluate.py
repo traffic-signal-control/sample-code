@@ -37,6 +37,8 @@ def evaluate_one_traffic(dic_sim_setting, scenario):
         print("====================== score ======================")
         print("scenario_{0}: {1}".format(scenario, score))
         print("====================== score ======================")
+        with open(outFile, "w") as f:
+            f.write(str(score))
     else:
         print("planFile is invalid, Rejected!")
 
@@ -54,9 +56,9 @@ def cal_travel_time(dic_sim_setting, roadnetFile, flowFile, planFile):
 
     for step in range(dic_sim_setting["num_step"]):
         phase = int(plan.loc[step])
-        eng.set_tl_phase(intersection_id, phase)  
+        eng.set_tl_phase(intersection_id, phase)
         eng.next_step()
-        current_time = eng.get_current_time()                     
+        current_time = eng.get_current_time()
 
         if current_time % 100 == 0:
             print("Time: {} / {}".format(current_time, dic_sim_setting["num_step"]))
