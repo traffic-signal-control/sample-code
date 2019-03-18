@@ -26,6 +26,7 @@ The detailed information about this competition can be found in the following se
 
 [Timeline & Prizes](https://github.com/tianrang-intelligence/TSCC2019/wiki/Timeline-&-Prizes)
 
+[FAQ](https://github.com/tianrang-intelligence/TSCC2019/wiki/FAQ)
 
 For more information, Please open [Issues](https://github.com/tianrang-intelligence/TSCC2019/issues) or join our QQ group(951657723).
 
