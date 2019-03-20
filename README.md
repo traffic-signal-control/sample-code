@@ -20,6 +20,8 @@ The detailed information about this competition can be found in the following se
 
 [Submission Guidelines](https://github.com/tianrang-intelligence/TSCC2019/wiki/Submission-Guidelines)
 
+[Overall Score](https://github.com/tianrang-intelligence/TSCC2019/wiki/Overall-Score)
+
 [Rules](https://github.com/tianrang-intelligence/TSCC2019/wiki/Rules)
 
 [Timeline & Prizes](https://github.com/tianrang-intelligence/TSCC2019/wiki/Timeline-&-Prizes)
