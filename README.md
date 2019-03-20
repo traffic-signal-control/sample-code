@@ -3,8 +3,6 @@ Traffic Signal Control Competition
 
 Join Competition from [here](http://www.tscc2050.com/) on PC.
 
-「Submission」 and 「Leaderboard」 features will be available at March 20th.
-
 # Intro
 Welcome to the Traffic Signal Control Competition@2050 (TSCC2050)!
 
