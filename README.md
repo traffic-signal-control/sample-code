@@ -4,7 +4,7 @@ Traffic Signal Control Competition
 Join Competition from [here](http://www.tscc2050.com/) on PC.
 
 # Intro
-Welcome to the Traffic Signal Control Competition@2050 (TSCC2050)!
+Welcome to the Traffic Signal Control Competition@2050 ([TSCC2050](http://www.tscc2050.com/))!
 
 Traffic congestion is one of the most severe urban issues nowadays, which has resulted in tremendous economic cost and waste of people's time. Congestion is caused by many factors, such as overloaded number of vehicles and bad design of road structures. Some factors may require more sophisticated policy or long-term planning. But one direct factor that could be potentially improved by today's big data and advanced learning technology is traffic signal control. Therefore, this competition is hosted to encourage people to design novel and effective algorithms to allocate time resource for traffic lights reasonably and to mitigate traffic congestion.
 
