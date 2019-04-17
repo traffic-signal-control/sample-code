@@ -72,4 +72,4 @@ class CityFlowEnv():
         df = pd.DataFrame({self.intersection_id: self.phase_log[:self.num_step]})
         if not os.path.exists(self.config['data']):
             os.makedirs(self.config["data"])
-        df.to_csv(os.path.join(self.config['data'], 'signal_plan.txt'), index=None)
+        df.to_csv(os.path.join(self.config['data'], 'signal_plan_template.txt'), index=None)

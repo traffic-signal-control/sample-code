@@ -7,11 +7,11 @@ import argparse
 from utility import parse_arguments
 
 baseline_tt = {
-    "hangzhou_bc_tyc_1h_10_11_2021": 479.19,
-    "hangzhou_bc_tyc_1h_7_8_1848": 340.15,
-    "hangzhou_bc_tyc_1h_8_9_2231": 573.18,
-    "hangzhou_kn_hz_1h_7_8_827": 161.48,
-    "hangzhou_sb_sx_1h_7_8_1671": 258.61,
+    "hangzhou_1x1_bc-tyc_18041610_1h": 479.19,
+    "hangzhou_1x1_bc-tyc_18041607_1h": 340.15,
+    "hangzhou_1x1_bc-tyc_18041608_1h": 573.18,
+    "hangzhou_1x1_kn-hz_18041607_1h": 161.48,
+    "hangzhou_1x1_sb-sx_18041607_1h": 258.61,
 }
 
 def main():
@@ -24,7 +24,7 @@ def main():
 def evaluate_one_traffic(dic_sim_setting, scenario):
     roadnetFile = "data/{}/roadnet.json".format(scenario)
     flowFile = "data/{}/flow.json".format(scenario)
-    planFile = "data/{}/signal_plan.txt".format(scenario)
+    planFile = "data/{}/signal_plan_template.txt".format(scenario)
     outFile = "data/{}/evaluation.txt".format(scenario)
 
     if check(planFile, dic_sim_setting["num_step"]):
