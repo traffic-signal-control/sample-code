@@ -6,12 +6,22 @@ from sim_setting import sim_setting_control
 import argparse
 from utility import parse_arguments
 
-baseline_tt = {
-    "hangzhou_1x1_bc-tyc_18041610_1h": 479.19,
-    "hangzhou_1x1_bc-tyc_18041607_1h": 340.15,
-    "hangzhou_1x1_bc-tyc_18041608_1h": 573.18,
-    "hangzhou_1x1_kn-hz_18041607_1h": 161.48,
-    "hangzhou_1x1_sb-sx_18041607_1h": 258.61,
+traffic_map = {
+        "hangzhou_1x1_bc-tyc_18041607_1848_1h": 221.03,
+        "hangzhou_1x1_bc-tyc_18041608_2231_1h": 334.72,
+        "hangzhou_1x1_bc-tyc_18041610_2021_1h": 213.20,
+        "hangzhou_1x1_kn-hz_18041607_827_1h": 	72.48 ,
+        "hangzhou_1x1_kn-hz_18041608_743_1h": 	64.10 ,
+        "hangzhou_1x1_qc-yn_18041607_1289_1h": 	117.24,
+        "hangzhou_1x1_qc-yn_18041608_1417_1h": 	131.99,
+        "hangzhou_1x1_sb-sx_18041607_1671_1h": 	173.85,
+        "hangzhou_1x1_sb-sx_18041608_2032_1h": 	290.00,
+        "hangzhou_1x1_tms-xy_18041607_1969_1h": 214.77,
+        "hangzhou_1x1_tms-xy_18041608_2159_1h": 325.32,
+
+        "syn_1x1_uniform_800_1h":  61.44 ,
+        "syn_1x1_uniform_1600_1h": 133.40,
+        "syn_1x1_uniform_2400_1h": 189.11,
 }
 
 def main():
