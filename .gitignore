@@ -1,6 +1,7 @@
 .idea
 _*
 *.swp
+.DS_Store
 
 # Logs
 logs
